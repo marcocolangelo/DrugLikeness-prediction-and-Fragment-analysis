@@ -1,16 +1,19 @@
 
-preprocessing/vocab_preparation/__pycache__/mol_tree.cpython-38.pyc
-preprocessing/vocab_preparation/__pycache__/chemutils.cpython-38.pyc
+preprocessing/vocab_preparation/*
+
 
 preprocessing/results
 preprocessing/nondrugs_dbs
+preprocessing/mlruns/*
+preprocessing/drugs_dbs/*
 
-preprocessing/*
+
 
 preprocessing/test.csv
 preprocessing/train.csv
 preprocessing\ZINC\*.csv
 gnn-hiv-example-model/mlartifacts/0/*
+preprocessing/**/*.csv
 
 MSSGAT/*
 preprocessing/ZINC/in_vitro_extracted_zinc_ids_new.csv
@@ -21,3 +24,5 @@ __pycache__\*
 data\sdf\*
 *.sdf
 gnn-hiv-example-model\trash_to_delete\*
+
+drug_predictor_and_fragment_extractor/mlartifacts/0/2bcf19e8e06c44cbafea729f266c5041_drop_0.5_lr0.01_training_200+200epochs_fine_tuning_TCMBANK_total_small_db
