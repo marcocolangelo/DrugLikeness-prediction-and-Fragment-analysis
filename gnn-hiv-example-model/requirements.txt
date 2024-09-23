@@ -1,0 +1,14 @@
+mango
+matplotlib
+mlflow
+numpy
+pandas
+Requests
+scikit_learn
+seaborn
+streamlit
+pytorch
+tqdm
+deepchem
+rdkit
+pyg
