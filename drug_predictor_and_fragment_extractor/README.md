@@ -3,7 +3,7 @@
 
 ## Overview
 
-This project implements a Graph Neural Network (GNN) model for classifying molecules in the context of HIV inhibition. The model uses molecular graph representations and advanced machine learning techniques to predict whether a given molecule can inhibit HIV replication. The model leverages graph-based learning for improved feature extraction and classification performance, focusing on molecular structure and interactions.
+This project implements a Graph Neural Network (GNN) model for classifying molecules in the context of Traditional Chinese Medicine drug-likeness. The model uses molecular graph representations and deep learning techniques to predict whether a given molecule is druglike. The model leverages graph-based learning for improved feature extraction and classification performance, focusing on molecular structure and interactions.
 
 ## Table of Contents
 
