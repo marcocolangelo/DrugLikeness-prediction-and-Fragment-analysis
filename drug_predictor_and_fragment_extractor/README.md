@@ -126,7 +126,7 @@ This script will evaluate the model's performance and tune hyperparameters using
 To generate predictions using the trained model, execute the `predict.py` script with the required input data:
 
 ```bash
-python predict.py --input <input_csv_file> --output <output_csv_file>
+python predict.py 
 ```
 
 Make sure the input file is correctly formatted as required by the model.
@@ -149,11 +149,11 @@ Additionally, for hyperparameter optimization, the script `validation_train.py` 
 
 The best trained model is mlartifacts\0\388693edcfd747f6ae7f2edb65d65cd2 with metrics:
 
-F1 Score: 0.8412029744679292
-Accuracy: 0.8323276862381063
-Precision: 0.7995264953694032
-Recall: 0.8874632864430361
-ROC AUC: 0.8322807296259775
+- F1 Score: 0.8412029744679292
+- Accuracy: 0.8323276862381063
+- Precision: 0.7995264953694032
+- Recall: 0.8874632864430361
+- ROC AUC: 0.8322807296259775
 
 
 To review experiment details and visualize the results, launch the MLFlow UI:
