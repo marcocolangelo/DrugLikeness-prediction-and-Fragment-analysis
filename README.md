@@ -28,7 +28,7 @@ This project uses Python 3.8+ and depends on several key libraries, including Py
 1. Clone this repository:
 
    ```bash
-   git clone [DrugLikeness-prediction-and-Fragment-analysis](https://github.com/marcocolangelo/DrugLikeness-prediction-and-Fragment-analysis)
+   git clone https://github.com/marcocolangelo/DrugLikeness-prediction-and-Fragment-analysis
    ```
 
 2. Install dependencies:
@@ -79,8 +79,8 @@ python predict.py
 ```
 
 You can modify the flags `deep-search` and `final`.
-`deep-search` : activate the modality which exploits a BTS for capturing bigger relevant substructures instead of single relevant fragments.
-`final` : performs the prediticion of the TMC dataset we uploaded in the repository.
+- `deep-search` : activate the modality which exploits a BTS for capturing bigger relevant substructures instead of single relevant fragments.
+- `final` : performs the prediticion of the TMC dataset we uploaded in the repository.
 
 ## Contributing
 
