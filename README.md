@@ -1,4 +1,4 @@
-# Molecular Fragment Extraction Using Transformer-based Graph Neural Networks (GNN)
+# Molecular Fragment Extraction Using Transformer-based Graph Neural Networks (GNN) on Traditional Chinese Medicine molecules
 
 ## Project Overview
 
@@ -80,7 +80,7 @@ python predict.py
 
 You can modify the flags `deep-search` and `final`.
 - `deep-search` : activate the modality which exploits a BTS for capturing bigger relevant substructures instead of single relevant fragments.
-- `final` : performs the prediticion of the TMC dataset we uploaded in the repository.
+- `final` : performs the predictions on the TMC dataset we uploaded in the repository.
 
 ## Contributing
 
