@@ -61,6 +61,7 @@ python train.py
 
 You can adjust hyperparameters in the config file, such as learning rate, batch size, and the number of GNN layers.
 
+
 ### Continue training
 
 If you started a training and you want to load the relative checkpoint to continue it, you can execute the `continue_training.py` file.
@@ -81,6 +82,18 @@ python predict.py
 You can modify the flags `deep-search` and `final`.
 - `deep-search` : activate the modality which exploits a BTS for capturing bigger relevant substructures instead of single relevant fragments.
 - `final` : performs the predictions on the TMC dataset we uploaded in the repository.
+- 
+
+
+### Post-processing
+
+It is where the final analysis on the extracted fragments is performed. 
+
+It performs a decuplication operation in order to find the unique occurrencies and the total occurrencies for each fragment, computes the fingerprints and applies the HDBSCAN algorithm on them. Everything is saved in dedicated files.
+
+Once you obtained the predictions and high attentions fragments files from the prediction script, you can execute `unique_frag_high_att_frags_analysis` to gather all this information on the collected fragments. 
+
+It is compatible even with fragments obtained with the deep_search flag enabled.
 
 ## Contributing
 
