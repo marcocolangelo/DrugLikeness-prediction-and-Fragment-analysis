@@ -26,3 +26,4 @@ data\sdf\*
 gnn-hiv-example-model\trash_to_delete\*
 
 drug_predictor_and_fragment_extractor/mlartifacts/0/2bcf19e8e06c44cbafea729f266c5041_drop_0.5_lr0.01_training_200+200epochs_fine_tuning_TCMBANK_total_small_db
+.venv

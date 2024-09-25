@@ -14,6 +14,7 @@ data/ZINC
 __pycache__
 .vscode
 mlruns/0
+.venv/*
 
 postprocessing/fragment_analysis/TMMC/*/*.png
 trash_to_delete/*
