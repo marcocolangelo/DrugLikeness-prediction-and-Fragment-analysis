@@ -64,7 +64,7 @@ You can adjust hyperparameters in the config file, such as learning rate, batch 
 
 ### Continue training
 
-If you started a training and you want to load the relative checkpoint to continue it, you can execute the `continue_training.py` file.
+If you started training and want to load the relative checkpoint to continue it, you can execute the `continue_training.py` file.
 
 ```bash
 python continue_training.py 
@@ -73,25 +73,25 @@ python continue_training.py
 
 ### Prediction
 
-You can use a pretrained model executing the file predict.py
+You can use a pre-trained model when executing the file predict.py
 
 ```bash
 python predict.py 
 ```
 
 You can modify the flags `deep-search` and `final`.
-- `deep-search` : activate the modality which exploits a BTS for capturing bigger relevant substructures instead of single relevant fragments.
+- `deep-search` : activates the modality that exploits a BTS for capturing bigger relevant substructures instead of single relevant fragments.
 - `final` : performs the predictions on the TMC dataset we uploaded in the repository.
 - 
 
 
 ### Post-processing
 
-It is where the final analysis on the extracted fragments is performed. 
+It is where the final analysis of the extracted fragments is performed. 
 
-It performs a decuplication operation in order to find the unique occurrencies and the total occurrencies for each fragment, computes the fingerprints and applies the HDBSCAN algorithm on them. Everything is saved in dedicated files.
+It performs a deduplication operation in order to find the unique occurrences and the total occurrences for each fragment, computes the fingerprints and applies the HDBSCAN algorithm to them. Everything is saved in dedicated files.
 
-Once you obtained the predictions and high attentions fragments files from the prediction script, you can execute `unique_frag_high_att_frags_analysis` to gather all this information on the collected fragments. 
+Once you have obtained the predictions and high-attention fragments files from the prediction script, you can execute `unique_frag_high_att_frags_analysis` to gather all this information on the collected fragments. 
 
 It is compatible even with fragments obtained with the deep_search flag enabled.
 
@@ -106,6 +106,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - **MSSGAT**: Special thanks to the authors of *Multi-Scale Self-Supervised Graph Attention Networks (MSSGAT)* for their contributions to the attention mechanisms applied in this project.
-- **DeepFindr**: This code has taken inspiration by the project you can find thorugh the following link https://github.com/deepfindr/gnn-project by the user DeepFindr
+- **DeepFindr**: This code has taken inspiration from the project you can find through the following link https://github.com/deepfindr/gnn-project by the user DeepFindr
 - **PyTorch Geometric** for providing the necessary tools for GNNs.
 - **RDKit** and **DeepChem** for molecular processing and feature extraction.
