@@ -1,4 +1,4 @@
-# Molecular Fragment Extraction Using Graph Neural Networks (GNN)
+# Molecular Fragment Extraction Using Transformer-based Graph Neural Networks (GNN)
 
 ## Project Overview
 
@@ -8,8 +8,9 @@ The model employs **Graph Neural Networks (GNN)** to process molecular graphs, l
 
 ## Objectives
 
-- Extract common and chemically relevant molecular fragments from a set of input molecules.
+- Predicting whether a molecule is drug-like or not.
 - Use attention mechanisms to highlight parts of the molecule most influential to the model's decision-making process.
+- Extract common and chemically relevant molecular fragments from a set of input molecules.
 - Employ clustering techniques to group similar molecular fragments based on structural similarity and positioning within the molecule.
 
 ## Key Features
@@ -27,7 +28,7 @@ This project uses Python 3.8+ and depends on several key libraries, including Py
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-repo-url/molecular-fragment-extraction.git
+   git clone [DrugLikeness-prediction-and-Fragment-analysis](https://github.com/marcocolangelo/DrugLikeness-prediction-and-Fragment-analysis)
    ```
 
 2. Install dependencies:
@@ -59,6 +60,27 @@ python train.py
 ```
 
 You can adjust hyperparameters in the config file, such as learning rate, batch size, and the number of GNN layers.
+
+### Continue training
+
+If you started a training and you want to load the relative checkpoint to continue it, you can execute the `continue_training.py` file.
+
+```bash
+python continue_training.py 
+```
+
+
+### Prediction
+
+You can use a pretrained model executing the file predict.py
+
+```bash
+python predict.py 
+```
+
+You can modify the flags `deep-search` and `final`.
+`deep-search` : activate the modality which exploits a BTS for capturing bigger relevant substructures instead of single relevant fragments.
+`final` : performs the prediticion of the TMC dataset we uploaded in the repository.
 
 ## Contributing
 
