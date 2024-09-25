@@ -91,7 +91,7 @@ It is where the final analysis of the extracted fragments is performed.
 
 It performs a deduplication operation in order to find the unique occurrences and the total occurrences for each fragment, computes the fingerprints and applies the HDBSCAN algorithm to them. Everything is saved in dedicated files.
 
-Once you have obtained the predictions and high-attention fragments files from the prediction script, you can execute `unique_frag_high_att_frags_analysis` to gather all this information on the collected fragments. 
+Once you have obtained the predictions and high-attention fragments files from the prediction script, you can execute `unique_frag_high_att_frags_analysis.py` to gather all this information on the collected fragments. 
 
 It is compatible even with fragments obtained with the deep_search flag enabled.
 
