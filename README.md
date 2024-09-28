@@ -1,8 +1,8 @@
-# Molecular Fragment Extraction Using Transformer-based Graph Neural Networks (GNN) on Traditional Chinese Medicine molecules
+# Druglikeness prediction and Fragment Extraction Using Transformer-based Graph Neural Networks on Traditional Chinese Medicine molecules
 
 ## Project Overview
 
-This project focuses on the development of a deep learning architecture capable of processing multiple molecular structures as input and extracting chemically relevant fragments. The goal is to identify molecular substructures that are not only common across multiple input molecules but are also chemically significant.
+This project focuses on developing a deep learning architecture capable of processing multiple molecular structures as input and extracting chemically relevant fragments. The goal is to identify molecular substructures that are not only common across multiple input molecules but are also chemically significant.
 
 The model employs **Graph Neural Networks (GNN)** to process molecular graphs, leveraging **Transformer-based convolutions** to compute attention scores on the graph. These scores allow for the identification of important molecular substructures, which can then be analyzed and clustered for further interpretation.
 
@@ -52,7 +52,7 @@ The preprocessing stage generates molecular trees and graph structures from SMIL
 
 
 ### DrugLikeness-prediction-and-Fragment-analysis
-This is the main folder, where the file for training and prediction are saved.
+This is the main folder, where the training and prediction files are saved.
 
 #### Training the Model  
 
@@ -83,8 +83,8 @@ python predict.py
 ```
 
 You can modify the flags `deep-search` and `final`.
-- `deep-search` : activates the modality that exploits a BTS for capturing bigger relevant substructures instead of single relevant fragments.
-- `final` : performs the predictions on the TMC dataset we uploaded in the repository.
+- `deep-search`: activates the modality that exploits a BTS for capturing bigger relevant substructures instead of single relevant fragments.
+- `final`: perform the predictions on the TMC dataset we uploaded in the repository.
 - 
 
 
