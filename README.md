@@ -51,7 +51,10 @@ This project uses Python 3.8+ and depends on several key libraries, including Py
 The preprocessing stage generates molecular trees and graph structures from SMILES notation. Use the `MoleculeDataset` class to process and featurize molecules before training.
 
 
-### Training the Model
+### DrugLikeness-prediction-and-Fragment-analysis
+This is the main folder, where the file for training and prediction are saved.
+
+#### Training the Model  
 
 To train the GNN on your dataset, use the `train.py` script:
 
@@ -62,7 +65,7 @@ python train.py
 You can adjust hyperparameters in the config file, such as learning rate, batch size, and the number of GNN layers.
 
 
-### Continue training
+#### Continue training
 
 If you started training and want to load the relative checkpoint to continue it, you can execute the `continue_training.py` file.
 
@@ -71,7 +74,7 @@ python continue_training.py
 ```
 
 
-### Prediction
+#### Prediction
 
 You can use a pre-trained model when executing the file predict.py
 
